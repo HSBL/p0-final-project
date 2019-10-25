@@ -14,18 +14,19 @@
       </div>
     </header>
     <main class="container">
-      <div class="timer" id="timer">
-        0
+      <div class="timer">
+        <span id="timer">0</span>
+        <span class="seconds">seconds</span>
       </div>
       <div class="sentence-div">
         <p class="sentence" id="game-sentence"></p>
       </div>
       <div class="input-div">
-        <input type="text" name="word" id="inputWord" autofocus />
+        <input type="text" name="word" id="word-input" autofocus />
       </div>
       <div class="score-div">
-        <p>Speed : 0</p>
-        <p>Accuracy : 0</p>
+        <p>Speed : <span id="speed">0</span></p>
+        <p>Accuracy : <span id="accuracy">0</span></p>
       </div>
       <div class="instruction-div">
         <p id="instruction">Instruction:</p>

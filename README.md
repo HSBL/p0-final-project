@@ -12,7 +12,7 @@ Feel free to fork or make a pull request.
 
 ## Future Updates:
 
-- randomize sentence
+- randomize sentence DONE
 - languages
 - correct or wrong words
 

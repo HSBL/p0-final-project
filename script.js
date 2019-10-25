@@ -1,11 +1,16 @@
 // collection of sentences
 const sentences = [
   "The quick brown fox jumps over the lazy dog",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat pellentesque maximus. Donec laoreet finibus lectus in condimentum. Nulla et ante nisl. Vestibulum pharetra mi ex, eget pulvinar metus mollis id. Aenean in libero vestibulum, fringilla risus in, porta odio. In vitae tellus vel libero fringilla dignissim."
+  "Pack my box with five dozen liquor jugs",
+  "The five boxing wizards jump quickly",
+  "How vexingly quick daft zebras jump",
+  "We promptly judged antique ivory buckles for the next prize"
 ];
 
 // pick a sentence and split into words
-var arrWords = sentences[0].split(" ");
+var arrWords = sentences[Math.floor(Math.random() * sentences.length)].split(
+  " "
+);
 
 // THE SENTENCE
 // DOM element

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fox Typing Frenzy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="timerStart()">
+    <header>
+      <div>
+        Fox Typing Frenzy
+      </div>
+    </header>
+    <main class="container">
+      <div class="timer" id="timer">
+        0
+      </div>
+      <div class="sentence-div">
+        <p class="sentence" id="game-sentence"></p>
+      </div>
+      <div class="input-div">
+        <input type="text" name="word" id="inputWord" autofocus />
+      </div>
+      <div class="score-div">
+        <p>Speed : 0</p>
+        <p>Accuracy : 0</p>
+      </div>
+      <div class="instruction-div">
+        <p id="instruction">Instruction:</p>
+        <p>
+          Type the sentence above, timer already start. Reload to restart the
+          game
+        </p>
+      </div>
+    </main>
+    <footer>
+      Amil Hasbala 2019
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -4,7 +4,8 @@ const sentences = [
   "Pack my box with five dozen liquor jugs",
   "The five boxing wizards jump quickly",
   "How vexingly quick daft zebras jump",
-  "We promptly judged antique ivory buckles for the next prize"
+  "We promptly judged antique ivory buckles for the next prize",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt vulputate dictum. Morbi interdum sed erat at interdum. Donec ut ornare felis."
 ];
 
 // pick a sentence and split into words
@@ -18,7 +19,11 @@ const gameSentence = document.getElementById("game-sentence");
 
 // Loop arr words
 for (let i = 0; i < arrWords.length; i++) {
-  gameSentence.innerHTML += `<span class="word" id="word${i}">${arrWords[i]}</span>`;
+  // gameSentence.innerHTML += `<span class="word" id="word${i}">${arrWords[i]}</span>`;// inner html destroy child element
+  gameSentence.insertAdjacentHTML(
+    "beforeend",
+    `<span class="word" id="word${i}">${arrWords[i]}</span>`
+  );
 }
 
 // THE TIMER

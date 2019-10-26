@@ -24,6 +24,7 @@ for (let i = 0; i < arrWords.length; i++) {
 // THE TIMER
 // DOM element
 var timerDisplay = document.getElementById("timer");
+var secondssDisplay = document.getElementById("secondss");
 
 var seconds = 0,
   intervalTime,
@@ -34,12 +35,17 @@ function timerStart() {
   // interval for timer
   intervalTime = setInterval(function() {
     seconds++;
+    var secondsss = "second";
+    if (seconds > 1) {
+      secondsss = "seconds";
+    }
+    secondssDisplay.innerHTML = secondsss;
     timerDisplay.innerHTML = seconds;
     speed.innerHTML = `${Math.round((60 / seconds) * score * 10) /
       10} words per minute`;
   }, 1000);
   // interval for game status
-  intervalStatus = setInterval(checkStatus, 50);
+  intervalStatus = setInterval(checkStatus, 15);
 }
 
 // THE SCORE
@@ -59,8 +65,10 @@ wordInput.addEventListener("keyup", event => {
   if (event.code === "Space") {
     if (wordInput.value.trim() === arrWords[wordCounter]) {
       score++;
+      document.getElementsByClassName("active")[0].className = "word done";
+    } else {
+      document.getElementsByClassName("active")[0].className = "word wrong";
     }
-    document.getElementsByClassName("active")[0].className = "word done";
     scoreElement.innerHTML = `${Math.round(
       (score / (wordCounter + 1)) * 100
     )} %`;

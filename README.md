@@ -8,13 +8,13 @@ Feel free to fork or make a pull request.
 
 - Current word DONE
 - End game DONE
-- style the input DONE
+- style the input DONE(kind of)
 
 ## Future Updates:
 
 - randomize sentence DONE
-- languages
-- correct or wrong words
+- correct or wrong words DONE
+- Menu
 
 ## known issue:
 

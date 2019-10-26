@@ -19,11 +19,7 @@ const gameSentence = document.getElementById("game-sentence");
 
 // Loop arr words
 for (let i = 0; i < arrWords.length; i++) {
-  // gameSentence.innerHTML += `<span class="word" id="word${i}">${arrWords[i]}</span>`;// inner html destroy child element
-  gameSentence.insertAdjacentHTML(
-    "beforeend",
-    `<span class="word" id="word${i}">${arrWords[i]}</span>`
-  );
+  gameSentence.innerHTML += `<span class="word" id="word${i}">${arrWords[i]}</span>`;
 }
 
 // THE TIMER

@@ -15,11 +15,17 @@ Feel free to fork or make a pull request.
 - randomize sentence DONE
 - correct or wrong words DONE
 - Menu
+  - dificulty
+  - other setting
+- Progress bar
+- Result
+- Store to database?
+- Sentence from API?
 
 ## known issue:
 
-- the DOM wont work on long sentence
+- the DOM wont work on long sentence DONE (inline issue)
 
 # Why
 
-This is final project for phase 0
+This is a final project for phase 0
